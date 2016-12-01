@@ -1,0 +1,43 @@
+<tool id="transrate" name="transrate" version="v1">
+    <description>de novo assembly evaluation of RNA-Seq data</description>
+    <requirements>
+	<container type="docker">ycogne/transrate</container>
+  </requirements>
+    <command>
+		/usr/bin/transrate-1.0.3-linux-x86_64/transrate
+		
+		
+		
+		
+		 --assembly ${ ','.join(['"%s"' % x for x in $input]) }
+		 
+		 
+		 
+		 
+
+	
+	 ## out files
+	 --output /home/results/eval_results ;
+	
+	
+	 mv /home/results/eval_results/assemblies.csv $assemblyQCresults
+	 
+    </command>
+    <inputs>
+			<param format="fasta" name="input" argument="--assembly" multiple="true" type="data" label="assembly" help=""/> 
+    	   
+  
+    </inputs>
+    <outputs>
+	    
+        <data format="csv" name="assemblyQCresults" label="${tool.name} on ${on_string}: Quality of Assembled Transcripts" />
+	
+    </outputs>
+    <help>
+
+
+    </help>
+
+    
+</tool>
+
