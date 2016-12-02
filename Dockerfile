@@ -9,7 +9,8 @@ RUN echo "galaxy  ALL = (root) NOPASSWD: SETENV: /usr/bin/docker" >> /etc/sudoer
 ADD  docker_pulling.sh $GALAXY_ROOT/
 RUN chmod +x docker_pulling.sh
 VOLUME ["/export/", "/data/", "/var/lib/docker"]
-ADD img_web $GALAXY_CONFIG_DIR/web/
+RUN mkdir $GALAXY_CONFIG_DIR/web/img_web/
+ADD img_web/* $GALAXY_CONFIG_DIR/web/
 
 ADD welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
 # Expose port 80 (webserver), 21 (FTP server), 8800 (Proxy)
