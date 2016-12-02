@@ -10,7 +10,7 @@ ADD  docker_pulling.sh $GALAXY_ROOT/
 RUN chmod +x docker_pulling.sh
 VOLUME ["/export/", "/data/", "/var/lib/docker"]
 RUN mkdir $GALAXY_CONFIG_DIR/web/img_web/
-ADD img_web/* $GALAXY_CONFIG_DIR/web/
+ADD img_web/* $GALAXY_CONFIG_DIR/web/img_web/
 
 ADD welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
 # Expose port 80 (webserver), 21 (FTP server), 8800 (Proxy)
