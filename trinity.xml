@@ -1,4 +1,4 @@
-<tool id="trinity" name="Trinity" version="v2.2.0">
+<tool id="trinity" name="Trinity docker" version="v2.2.0">
     <description>de novo assembly of RNA-Seq data</description>
     <requirements>
 	<container type="docker">ycogne/trinity:2.2.0</container>
@@ -152,6 +152,21 @@
     
 
     </help>
+<citations>
+  <citation type="bibtex">   
 
-    
+@article{grabherr2011full,
+  title={Full-length transcriptome assembly from RNA-Seq data without a reference genome},
+  author={Grabherr, Manfred G and Haas, Brian J and Yassour, Moran and Levin, Joshua Z and Thompson, Dawn A and Amit, Ido and Adiconis, Xian and Fan, Lin and Raychowdhury, Raktima and Zeng, Qiandong and others},
+  journal={Nature biotechnology},
+  volume={29},
+  number={7},
+  pages={644--652},
+  year={2011},
+  publisher={Nature Publishing Group}
+}
+ 
+  </citation>
+
+</citations>
 </tool>

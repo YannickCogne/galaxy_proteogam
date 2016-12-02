@@ -1,4 +1,4 @@
-<tool id="bridger" name="bridger" version="v2014-12-01">
+<tool id="bridger" name="Bridger Docker" version="v2014-12-01">
 	<description>de novo assembly of RNA-Seq data</description>
 	<requirements>
 	<container type="docker">ycogne/bridger:2014-12-01</container>
@@ -100,5 +100,22 @@
 	  https://github.com/fmaguire/Bridger_Assembler
 	</help>
 
-	
+    <citations>
+  <citation type="bibtex">   
+	@article{chang2015bridger,
+  title={Bridger: a new framework for de novo transcriptome assembly using RNA-seq data},
+  author={Chang, Zheng and Li, Guojun and Liu, Juntao and Zhang, Yu and Ashby, Cody and Liu, Deli and Cramer, Carole L and Huang, Xiuzhen},
+  journal={Genome biology},
+  volume={16},
+  number={1},
+  pages={1},
+  year={2015},
+  publisher={BioMed Central}
+}
+
+ 
+  </citation>
+
+</citations>
+
 </tool>

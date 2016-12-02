@@ -1,4 +1,4 @@
-<tool id="spades" name="spades" version="v3.9.0">
+<tool id="spades" name="Spades Docker" version="v3.9.0">
     <description>de novo assembly of RNA-Seq data</description>
     <requirements>
 	<container type="docker">ycogne/spades:3.9.0</container>
@@ -79,7 +79,23 @@
 http://spades.bioinf.spbau.ru/release3.9.0/rnaspades_manual.html
 
     </help>
+    <citations>
+  <citation type="bibtex">   
+   @article{bankevich2012spades,
+  title={SPAdes: a new genome assembly algorithm and its applications to single-cell sequencing},
+  author={Bankevich, Anton and Nurk, Sergey and Antipov, Dmitry and Gurevich, Alexey A and Dvorkin, Mikhail and Kulikov, Alexander S and Lesin, Valery M and Nikolenko, Sergey I and Pham, Son and Prjibelski, Andrey D and others},
+  journal={Journal of Computational Biology},
+  volume={19},
+  number={5},
+  pages={455--477},
+  year={2012},
+  publisher={Mary Ann Liebert, Inc. 140 Huguenot Street, 3rd Floor New Rochelle, NY 10801 USA}
+}
 
-    
+ 
+  </citation>
+
+</citations>
+ 
 </tool>
 

@@ -1,4 +1,4 @@
-<tool id="binpacker" name="binpacker" version="v1.1">
+<tool id="binpacker" name="Binpacker Docker" version="v1.1">
     <description>de novo assembly of RNA-Seq data</description>
     <requirements>
 	<container type="docker">ycogne/binpacker:1.1</container>
@@ -103,6 +103,17 @@
     <help>
        https://github.com/macmanes-lab/BinPacker/blob/master/README
     </help>
+<citations>
+  <citation type="bibtex">   @article{liu2016binpacker,
+  title={BinPacker: Packing-Based De Novo Transcriptome Assembly from RNA-seq Data},
+  author={Liu, Juntao and Li, Guojun and Chang, Zheng and Yu, Ting and Liu, Bingqiang and McMullen, Rick and Chen, Pengyin and Huang, Xiuzhen},
+  journal={PLoS Comput Biol},
+  volume={12},
+  number={2},
+  pages={e1004772},
+  year={2016},
+  publisher={Public Library of Science}}
+  </citation>
 
-    
+</citations>
 </tool>

@@ -1,14 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <toolbox monitor="true">
-  <section id="test" name="Docker tools">
-    <tool file="docker/catDocker.xml"/>
-    <tool file="docker/smalt_wrapper.xml"/>
-    <tool file="docker/trinity.xml"/>
-    <tool file="docker/binpacker.xml"/>
-    <tool file="docker/bridger.xml"/>
-    <tool file="docker/spades.xml"/>
-    <tool file="docker/oases.xml"/>
-	<tool file="docker/transrate.xml"/>
+  <section id="Docker tools" name="Docker tools">
+	<section id="Assemblage" name="Assemblage de novo">
+		<tool file="docker/catDocker.xml"/>
+		<tool file="docker/smalt_wrapper.xml"/>
+		<tool file="docker/trinity.xml"/>
+		<tool file="docker/binpacker.xml"/>
+		<tool file="docker/bridger.xml"/>
+		<tool file="docker/spades.xml"/>
+		<tool file="docker/oases.xml"/>
+	</section>	
+	<section id="Evaluation" name="Evaluation d'assemblage">
+		<tool file="docker/transrate.xml"/>
+	</section>
   </section>
   <section id="getext" name="Get Data">
     <tool file="data_source/upload.xml" />

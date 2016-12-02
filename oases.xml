@@ -1,4 +1,4 @@
-<tool id="oases" name="oases" version="v0.2.08">
+<tool id="oases" name="Oases Docker" version="v0.2.08">
     <description>de novo assembly of RNA-Seq data</description>
     <requirements>
 	<container type="docker">ycogne/oases:0.2.08</container>
@@ -89,6 +89,21 @@
     <help>
     https://www.ebi.ac.uk/~zerbino/oases/
     </help>
+<citations>
+  <citation type="bibtex">   
+    @article{schulz2012oases,
+  title={Oases: robust de novo RNA-seq assembly across the dynamic range of expression levels},
+  author={Schulz, Marcel H and Zerbino, Daniel R and Vingron, Martin and Birney, Ewan},
+  journal={Bioinformatics},
+  volume={28},
+  number={8},
+  pages={1086--1092},
+  year={2012},
+  publisher={Oxford Univ Press}
+}
+ 
+  </citation>
 
+</citations>
     
 </tool>

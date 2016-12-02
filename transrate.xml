@@ -1,4 +1,4 @@
-<tool id="transrate" name="transrate" version="v1.0.3">
+<tool id="transrate" name="Transrate Docker" version="v1.0.3">
     <description>de novo assembly evaluation of RNA-Seq data</description>
     <requirements>
 	<container type="docker">ycogne/transrate:1.0.3</container>
@@ -35,9 +35,23 @@
     </outputs>
     <help>
 
-
+	http://hibberdlab.com/transrate/
     </help>
 
-    
+    <citations>
+  <citation type="bibtex">   
+ @article{smith2016transrate,
+  title={TransRate: reference free quality assessment of de novo transcriptome assemblies},
+  author={Smith-Unna, Richard and Boursnell, Chris and Patro, Rob and Hibberd, Julian and Kelly, Steven},
+  journal={Genome research},
+  pages={gr--196469},
+  year={2016},
+  publisher={Cold Spring Harbor Lab}
+}
+
+ 
+  </citation>
+
+</citations>
 </tool>
 
