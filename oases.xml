@@ -1,7 +1,7 @@
-<tool id="oases" name="oases" version="v1">
+<tool id="oases" name="oases" version="v0.2.08">
     <description>de novo assembly of RNA-Seq data</description>
     <requirements>
-	<container type="docker">ycogne/oases</container>
+	<container type="docker">ycogne/oases:0.2.08</container>
   </requirements>
     <command>
        oases_pipeline.py 

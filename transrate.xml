@@ -1,7 +1,7 @@
-<tool id="transrate" name="transrate" version="v1">
+<tool id="transrate" name="transrate" version="v1.0.3">
     <description>de novo assembly evaluation of RNA-Seq data</description>
     <requirements>
-	<container type="docker">ycogne/transrate</container>
+	<container type="docker">ycogne/transrate:1.0.3</container>
   </requirements>
     <command>
 		/usr/bin/transrate-1.0.3-linux-x86_64/transrate

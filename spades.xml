@@ -1,7 +1,7 @@
-<tool id="spades" name="spades" version="v1">
+<tool id="spades" name="spades" version="v3.9.0">
     <description>de novo assembly of RNA-Seq data</description>
     <requirements>
-	<container type="docker">ycogne/spades</container>
+	<container type="docker">ycogne/spades:3.9.0</container>
   </requirements>
     <command>
        rnaspades.py 

@@ -1,7 +1,7 @@
-<tool id="binpacker" name="binpacker" version="v1">
+<tool id="binpacker" name="binpacker" version="v1.1">
     <description>de novo assembly of RNA-Seq data</description>
     <requirements>
-	<container type="docker">ycogne/binpacker</container>
+	<container type="docker">ycogne/binpacker:1.1</container>
   </requirements>
     <command>
        /usr/bin/BinPacker_1.0/BinPacker 

@@ -1,7 +1,7 @@
-<tool id="bridger" name="bridger" version="v1">
+<tool id="bridger" name="bridger" version="v2014-12-01">
 	<description>de novo assembly of RNA-Seq data</description>
 	<requirements>
-	<container type="docker">ycogne/bridger</container>
+	<container type="docker">ycogne/bridger:2014-12-01</container>
   </requirements>
 	<command>
 	   /usr/bin/Bridger_r2014-12-01/Bridger.pl 

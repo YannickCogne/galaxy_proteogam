@@ -1,7 +1,7 @@
-<tool id="trinity" name="Trinity" version="v1">
+<tool id="trinity" name="Trinity" version="v2.2.0">
     <description>de novo assembly of RNA-Seq data</description>
     <requirements>
-	<container type="docker">ycogne/trinity</container>
+	<container type="docker">ycogne/trinity:2.2.0</container>
   </requirements>
     <command>
        Trinity 
