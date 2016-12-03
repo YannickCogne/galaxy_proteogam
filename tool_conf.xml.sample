@@ -41,7 +41,7 @@
     <tool file="extract/liftOver_wrapper.xml" />
   </section>
     <section id="Docker tools" name="Docker tools">
-	<label id="Assemblage" text="Assemblage de novo">
+	<label id="Assemblage" text="Assemblage de novo"/>
 		<tool file="docker/catDocker.xml"/>
 		<tool file="docker/smalt_wrapper.xml"/>
 		<tool file="docker/trinity.xml"/>
@@ -49,7 +49,7 @@
 		<tool file="docker/bridger.xml"/>
 		<tool file="docker/spades.xml"/>
 		<tool file="docker/oases.xml"/>
-	<label id="Evaluation" text="Evaluation de l'assemblage">	
+	<label id="Evaluation" text="Evaluation de l'assemblage"/>	
 	
 		<tool file="docker/transrate.xml"/>
 	
