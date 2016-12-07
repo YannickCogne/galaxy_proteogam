@@ -11,7 +11,9 @@ RUN chmod +x docker_pulling.sh
 VOLUME ["/export/", "/data/", "/var/lib/docker"]
 RUN mkdir $GALAXY_CONFIG_DIR/web/img_web/
 ADD img_web/* $GALAXY_CONFIG_DIR/web/img_web/
-
+RUN DEBIAN_FRONTEND=noninteractive apt-get -qq update
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y duplicity
+RUN apt-get clean
 ADD welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
 # Expose port 80 (webserver), 21 (FTP server), 8800 (Proxy)
 EXPOSE :80
