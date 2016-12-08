@@ -16,6 +16,9 @@ RUN chmod 755 /etc/cron.monthly/save_duplicity.monthly
 ADD script/save_duplicity.daily /etc/cron.daily
 RUN chmod 755 /etc/cron.daily/save_duplicity.daily
 ADD web/welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
+RUN DEBIAN_FRONTEND=noninteractive apt-get -qq update
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y duplicity
+RUN apt-get clean
 # Expose port 80 (webserver), 21 (FTP server),22 (SFTP server), 8800 (Proxy)
 EXPOSE :80
 EXPOSE :21
