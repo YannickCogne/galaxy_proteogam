@@ -1,0 +1,3 @@
+#!/bin/sh
+
+duplicity full  --allow-source-mismatch /export file:///backup/backup  --no-encryption
