@@ -4,7 +4,7 @@ WORKDIR /galaxy-central
 RUN mkdir $GALAXY_ROOT/tools/docker
 ADD tools/*.xml $GALAXY_ROOT/tools/docker/
 ADD conf/job_conf.xml.sample_basic $GALAXY_ROOT/config/job_conf.xml
-ADD conf/tool_conf.xml.sample $GALAXY_ROOT/config/tool_conf.xml
+ADD conf/tool_conf.xml $GALAXY_ROOT/config/tool_conf.xml
 RUN echo "galaxy  ALL = (root) NOPASSWD: SETENV: /usr/bin/docker" >> /etc/sudoers
 ADD  script/docker_pulling.sh $GALAXY_ROOT/
 RUN chmod +x docker_pulling.sh
