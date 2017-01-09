@@ -9,8 +9,8 @@
 		$input
 	 
 		
-        -o  /home/results/samtools/output.samtools ;
-        mv /home/results/samtools/output.samtools $view
+        -o  /home/results/output.samtools ;
+        mv /home/results/output.samtools $view
     </command>
    
 	

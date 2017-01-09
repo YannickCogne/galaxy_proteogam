@@ -1,6 +1,9 @@
 FROM bgruening/galaxy-stable
 MAINTAINER Yannick Cogne
 WORKDIR /galaxy-central
+RUN DEBIAN_FRONTEND=noninteractive apt-get -qq update
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y duplicity
+RUN apt-get clean
 RUN mkdir $GALAXY_ROOT/tools/docker
 ADD tools/*.xml $GALAXY_ROOT/tools/docker/
 ADD conf/job_conf.xml.sample_basic $GALAXY_ROOT/config/job_conf.xml
@@ -15,9 +18,6 @@ ADD script/save_duplicity.monthly /etc/cron.monthly
 RUN chmod 755 /etc/cron.monthly/save_duplicity.monthly
 ADD script/save_duplicity.daily /etc/cron.daily/
 RUN chmod 755 /etc/cron.daily/save_duplicity.daily
-RUN DEBIAN_FRONTEND=noninteractive apt-get -qq update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y duplicity
-RUN apt-get clean
 ADD web/welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
 # Expose port 80 (webserver), 21 (FTP server),22 (SFTP server), 8800 (Proxy)
 EXPOSE :80
