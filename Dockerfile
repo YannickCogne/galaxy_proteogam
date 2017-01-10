@@ -24,7 +24,6 @@ EXPOSE :80
 EXPOSE :21
 EXPOSE :8800
 EXPOSE :22
-ADD /conf/galaxy.conf /etc/supervisor/conf.d
 ADD  /conf/crontab /etc
 RUN crontab /etc/crontab
 # Autostart script that is invoked during container start
